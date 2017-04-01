@@ -100,3 +100,7 @@ function q3() {
     window.location.href = "q3.html";
 
 }
+
+function finishGame() {
+    document.getElementById("everything").innerHTML = "<img src='http://static6.depositphotos.com/1011264/585/v/950/depositphotos_5857224-stock-illustration-congratulations.jpg' width='675' height='571' />";
+}
