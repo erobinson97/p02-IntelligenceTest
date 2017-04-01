@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!-- BOOTSTRAP (style only)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Intelligence Test</title>
+</head>
+
+
+<body lang="en-us" onload="start();">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-offset-5">
+                    <h1>Intelligence Test</h1>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">       
+            <div class="row">
+
+                <!--Game Panel-->
+                <div class="col-md-9">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Level 1</div>
+
+                        <div class="panel-body">
+                            <!--Examples-->
+                            <p>stuff stuff  stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff stuff</p>
+
+                            
+                            
+                            <!--Answer Box-->
+                            <div class="col-md-6 col-md-offset-6">
+                                <div class="input-group input-group-lg">
+                                    <span class="input-group-addon" id="sizing-addon1">12337 = </span>
+                                    <input type="text" class="form-control" id="ans" aria-describedby="sizing-addon1" oninput="checkAnswer(1);">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button" onclick="q2();" id="next" disabled>Next <span aria-hidden="true">&raquo;</span></button>
+                                    </span>
+                                </div>
+                            </div><!--Answer Box-->
+                        </div><!--Panel Body-->
+                    </div>
+                </div><!--Game Panel-->
+
+                <!--Side Bar-->
+                <div class="col-md-3">
+                    
+                            <!--Level Map-->
+                            <div class="col-md-offset-2">
+                            <span class="label label-primary">Level 1</span>
+                            <span class="label label-default">Level 2</span>
+                            <span class="label label-default">Level 3</span>
+                            </div>
+                        
+                        <div>
+                            &nbsp;
+                        </div>
+                        <!--Answer Checker-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading text-center">Answer Status</div>
+                            <div class="panel-body">
+                                <div class="alert alert-info text-center" role="alert" id="status"><strong>Un-Answered</strong></div>
+                            </div>
+                        </div>
+
+                        <!--Score-->
+                        <div class="panel panel-default" onload="Score();">
+                            <div class="panel-heading text-center">Score</div>
+                            <div class="panel-body" >
+                                <p id="curScore" class="text-center">0/3</p>
+                            </div>
+                        </div>
+                </div><!--Side Bar-->
+                
+   
+        </div><!--Row-->
+    </div><!--Container-->
+</body>
+</html>
