@@ -102,5 +102,8 @@ function q3() {
 }
 
 function finishGame() {
+    /*Image taken from:
+    http://depositphotos.com/5857224/stock-illustration-congratulations.html
+    */
     document.getElementById("everything").innerHTML = "<img src='http://static6.depositphotos.com/1011264/585/v/950/depositphotos_5857224-stock-illustration-congratulations.jpg' width='675' height='571' /> <h1 class='text-center'>You got 100% of them correct<h1>";
 }
